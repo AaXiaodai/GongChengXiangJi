@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lzy.gpstask.view.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.lzy.gpstask.view.RectOnCamera
+        android:id="@+id/rectOnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/photo_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经度:定位中"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/photo_weidu"
+            android:layout_below="@+id/photo_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬度:定位中"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/photo_fangxiang"
+            android:layout_below="@+id/photo_weidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方向角:搜索中"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/takePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_pai"
+            android:text="拍照"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</FrameLayout>
